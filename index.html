@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 01</title>
+    <link rel="shortcut icon" href="imagens/faviconcat.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Módulo 1 - Revisão completa</h1>
+
+    <h2>Parágrafos, emogis e quebras de linha</h2>
+    <h3>Parágrafos</h3>
+    <p>
+        Para criarmos um parágrafo em HTML5 usamos as tags &lt;p&gt; e &lt;/p&gt;. <br>
+        Todo o conteúdo do parágrafo deve ser escrito dentro dessas duas tags. 
+    </p>
+    <p><small>
+        Minhas linguagens de programação prefridas são python e JavaScript.
+    </small></p>
+    <p><small>Código</small></p>
+    <pre>
+        <code>
+    &lt;p&gt;
+         Minhas linguagens de programação prefridas são python e JavaScript.
+    &lt;/p&gt;
+        </code>
+    </pre>
+    <h3>Emojis</h3>
+    <p>Podemos também adicionar emojis às nossas páginas, onde cada emoji possui um código único.
+    Confira alguns exemplos abaixo.</p>
+    <p>&#x1F60B &#x1F603 &#X1F604 &#X1F601 &#X1F609</p>
+    <p><small>Recomendo que você visite o site <u>emojipedia.org</u> lá você terá acesso 
+    a todos os códigos dos emojis, basta trocar os parâmetros U+ por &#x seguido do código.</p>
+    <p><small>Código</small></p>
+    <pre>
+        <code>
+        &lt;p&gt;
+            &amp;#x1F60B - &amp;#x1F603 - &amp;#x1F604 - &amp;#x1F601 - &amp;#x1F609
+        &lt;p&gt;
+        </code>
+    </pre>
+    <h3>Quebras de linha</h3>
+    <p>
+        As quebras de linha são representadas únicamente pela tag &lt;br&gt; <br>
+        essas tags não possuem tag de fechamento, servem para delimitar até onde o texto
+        será exibido quebrando-o e colocando o conteúdo em outra linha.
+    </p> 
+    <p><small>
+        Maria gosta muito de desenvolver jogos na UNITE. <br>
+        Maria gosta muito de desenvolver <br> jogos na UNITE.
+    </small></p>
+    <p><small>Código:</small></p>
+    <pre>
+        <code>
+    &lt;p&gt;
+        Maria gosta muito de desenvolver jogos na UNITE. &lt;br&gt;
+        Maria gosta muito de desenvolver &lt;br&gt; jogos na UNITE.
+    &lt;/p&gt; 
+        </code>
+    </pre>
+
+
+    <h2>Imagens e Favicons</h2>
+    <h3>Imagens</h3>
+    <p>Inicialmente vamos falar de direitos autorais, esse assunto é de suma importância para você não ter problemas com os seus projetos no futuro.  Sabe aquela imagem que você achou no google e que se encaixou perfeitamente no seu site? é muito provável que você não possa usá-la e pode até mesmo ser processado(a) por isso. Para entender melhor sobre esse asssunto de direitos de imagem, recomendo que você assista a essa entrevista de um especialista em direito digital <strong>Alan Moreira Lopes</strong>. <br>
+    <small>assista ao video: <u>https://youtube.com/Blirurp2fg</u></small></p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/farol300.jpg" type="image/jpeg">
+        <source media="(max-width:1050px )" srcset="imagens/farol700.jpg" type="image/jpeg">
+        <img src="imagens/farol1000.jpg" alt="Farol Isolado">
+    </picture>
+    <p>Para adicionar uma imagem no seu site Inicialmente você deve criar uma pasta chamada imagens dentro da pasta do seu projeto, depois coloque dentro dessa pasta todas as imagens que você vai utilizar. use a tag única &lt;img&gt; para criar o código. Você deve usar a tag img seguida dos atributos src e alt como eu exemplifiquei no código abaixo.</p>
+    <p><small>Código:</small></p>
+    <pre>
+        <code>
+    &lt;img src="imagens/farol.jpg" alt="Farol"&gt;
+        </code>
+    </pre>
+    <h3>Favicons</h3>
+    <p>Com certeza você já viu aqueles pequenos ícones que aparecem ao lado dos sites que visitamos, na 
+        parte superior do seu navegador. Para adicioná-los ao seu site você deve usar a tag &lt;link rel="shortcut icon" href="favicon" type="image/x-icon"&gt; dentro das tags head logo abaixo das tags tittle.
+    </p>
+    <img src="imagens/exemplofaviconcat.png" alt="Exemplo de Favicon">
+    <img src="imagens/exemplofavicongithub.png" alt="Exemplo de Favicon GITHUB"> <br>
+    <img src="imagens/faviconyoutube.png" alt="Exemplo de Favicon YOUTUBE">
+    <img src="imagens/favicongoogle.png" alt="Exemplo de Favicon GOOGLE">
+<p><small>Código:</small></p>
+<pre>
+    <code>
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Módulo 01&lt;/title&gt;
+    &lt;link rel="shortcut icon" href="imagens/faviconcat.png" type="image/x-icon"&gt;
+&lt;/head&gt;
+    </code>
+</pre>
+
+
+<h2>Formatações de Textos</h2>
+<h3>Negrito</h3>
+<p>Se você pretende deixar em negrito alguma palavra, frase ou Parágrafo em HTML, você pode usar as tags &lt;strong&gt;&lt;/strong&gt; e colocar o conteúdo entre uma tag e outra, como exemplifiquei abaixo.</p>
+<p>Mariana estuda <strong>engenharia de software</strong> na <strong>UFC</strong></p>
+<p><small>Código:</small></p>
+<pre>
+    <code>
+&lt;p&gt;
+   Mariana estuda &lt;strong&gt;engenharia de software&lt;/strong&gt; na &lt;strong&gt;UFC&lt;/strong&gt;
+&lt;/p&gt;
+    </code>
+</pre>
+<h3>Itálico</h3>
+<p>Se você quiser deixar uma palavra, frase ou parágrafo em itálico você deve usar as tags &lt;em&gt;&lt;/em&gt; e colocar o conteúdo entre essas duas tags, veja o exemplo abaixo:
+    <p>Aprender java não é <em>impossível</em>, só não é <em>possível</em> &#X1F440</p>
+</p>
+<p><small>Código:</small></p>
+<pre>
+    <code>
+&lt;p&gt;
+    Aprender java não é &lt;em&gt;impossível&lt;/em&gt;, só não é &lt;em&gt;possível&lt;/em&gt; &amp;#X1F440
+&lt;/p&gt;
+    </code>
+</pre>
+<h3>Marca Texto</h3>
+</body>
+</html>
