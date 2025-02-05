@@ -1,17 +1,7 @@
-body {
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+text-align: justify; }
 
-p {
-text-align: justify;
-}
+a { text-decoration: none;
+    color: rgb(0, 20, 196); }
 
-a {
-    text-decoration: none;
-    color: rgb(0, 20, 196);
-}
-
-code 
-{
-    color: rgba(16, 76, 189, 0.87);
-}
+code { color: rgba(16, 76, 189, 0.87); }

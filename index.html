@@ -262,7 +262,7 @@
 </small>
 <h3>Links externos</h3>
 <p>Para criar links externos você deve usar a tag <small>&lt;a&gt;</small> e colocar a URL do site que você quer disponibillizar dentro do atributo <small><em>href</em></small>. É recomendado que assim como nos links internos você use o atributo <small>taget"..."</small> e dentro das aspas você coloque <small>_blank</small> para sinalizar ao navegador que se trata de um link de terceiros e que seja aberto em outra aba. Confira o exemplo abaixo:</p>
-<a href="https://github.com" target="_blank">https://github.com</a>
+<a href="https://github.com" target="_blank" rel="external">https://github.com</a>
 <p><small>Código:</small></p>
 <small>
     <pre>
@@ -273,7 +273,7 @@
 </small>
 <h3>Downloads</h3>
 <p>Para disponibillizar um arquivo para download dentro do seu site você deve usar a tag <small>&lt;a&gt;</small> e colocar o nome do arquivo no atributo <small><em>href</em></small> e complementar com mais dois atributos <small>download".."</small> e o <small>type".."</small>. confira o exemplo abaixo:</p>
-<img src="imagens/cat.png" alt="cat" width="300px" height="300px">
+<img src="imagens/cat.png" alt="cat" width="300px" height="300px"> <br>
 <a href="imagens/cat.png" download="cat.png" type="image/png">DOWNLOAD</a>
 
 
@@ -298,6 +298,41 @@
     </pre>
 </small>
 <h3>Áudio</h3>
-<p></p>
+<p>Para adicionar um áudio dentro do seu site você deve usar a tag <small>&lt;audio&gt;</small> seguido dos parâmetros <small>preload, controls, loop, source e type</small>. Confira o exemplo abaixo:</p>
+<audio preload="metadata" controls loop>
+    <source src="midia/sunny-day.mp3.mp3" type="audio/mp3">
+</audio>
+<p><small>Código:</small></p>
+<pre>
+    <code>
+ &lt;audio preload="metadata" controls loop&gt;
+     &lt;source src="midia/sunny-day.mp3.mp3" type="audio/mp3"&gt;
+ &lt;/audio&gt;
+    </code>
+</pre>
+<h3>Videos externos</h3>
+<p>Para adcionar vídeos externos ao seu site basta ir no vídeo e copiar o código do video para fazer a incorporação, confira o exemplo abaixo:</p>
+<iframe width="300" height="150" src="https://www.youtube.com/embed/P4Ru46-zjck?si=k_l_x3tQkRbQwOuS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p><small>Código:</small></p>
+<img src="imagens/exeexternalvideo.png" width="300px" height="150px" alt="Exemplo">
+
+
+<h2>Um pouco de estilos CSS</h2>
+<h3>Esses foram todos os estilos que usei no desenvolvimento dessa pequena revisão do módulo 1</h3>
+<p><small>Código:</small></p>
+<pre>
+    <code>
+  body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify; }
+
+  a { text-decoration: none;
+    color: rgb(0, 20, 196); }
+
+  code { color: rgba(16, 76, 189, 0.87); }
+    </code>
+</pre>
+
+
+<h2 style="color: rgb(48, 45, 216);">Fim do módulo 1, nos vemos no módulo 2! :&#41;</h2>
 </body>
 </html>
