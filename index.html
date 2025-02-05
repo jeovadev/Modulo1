@@ -16,10 +16,12 @@
         Para criarmos um parágrafo em HTML5 usamos as tags &lt;p&gt; e &lt;/p&gt;. <br>
         Todo o conteúdo do parágrafo deve ser escrito dentro dessas duas tags. 
     </p>
-    <p><small>
-        Minhas linguagens de programação prefridas são python e JavaScript.
-    </small></p>
-    <p><small>Código</small></p>
+    <small>
+        <p>
+            Minhas linguagens de programação prefridas são python e JavaScript.
+        </p>
+    </small>
+    <p><small>Código:</small></p>
     <pre>
         <code>
     &lt;p&gt;
@@ -31,9 +33,11 @@
     <p>Podemos também adicionar emojis às nossas páginas, onde cada emoji possui um código único.
     Confira alguns exemplos abaixo.</p>
     <p>&#x1F60B &#x1F603 &#X1F604 &#X1F601 &#X1F609</p>
-    <p><small>Recomendo que você visite o site <u>emojipedia.org</u> lá você terá acesso 
-    a todos os códigos dos emojis, basta trocar os parâmetros U+ por &#x seguido do código.</p>
-    <p><small>Código</small></p>
+    <small>
+        <p>Recomendo que você visite o site <u>emojipedia.org</u> lá você terá acesso
+        a todos os códigos dos emojis, basta trocar os parâmetros U+ por &#x seguido do código.</p>
+    </small>
+    <p><small>Código:</small></p>
     <pre>
         <code>
         &lt;p&gt;
@@ -47,10 +51,12 @@
         essas tags não possuem tag de fechamento, servem para delimitar até onde o texto
         será exibido quebrando-o e colocando o conteúdo em outra linha.
     </p> 
-    <p><small>
-        Maria gosta muito de desenvolver jogos na UNITE. <br>
-        Maria gosta muito de desenvolver <br> jogos na UNITE.
-    </small></p>
+    <small>
+        <p>
+            Maria gosta muito de desenvolver jogos na UNITE. <br>
+            Maria gosta muito de desenvolver <br> jogos na UNITE.
+        </p>
+    </small>
     <p><small>Código:</small></p>
     <pre>
         <code>
@@ -71,7 +77,9 @@
         <source media="(max-width:1050px )" srcset="imagens/farol700.jpg" type="image/jpeg">
         <img src="imagens/farol1000.jpg" alt="Farol Isolado">
     </picture>
-    <p>Para adicionar uma imagem no seu site Inicialmente você deve criar uma pasta chamada imagens dentro da pasta do seu projeto, depois coloque dentro dessa pasta todas as imagens que você vai utilizar. use a tag única &lt;img&gt; para criar o código. Você deve usar a tag img seguida dos atributos src e alt como eu exemplifiquei no código abaixo.</p>
+    <small>
+        <p>Para adicionar uma imagem no seu site Inicialmente você deve criar uma pasta chamada imagens dentro da pasta do seu projeto, depois coloque dentro dessa pasta todas as imagens que você vai utilizar. use a tag única &lt;img&gt; para criar o código. Você deve usar a tag img seguida dos atributos src e alt como eu exemplifiquei no código abaixo.</p>
+    </small>
     <p><small>Código:</small></p>
     <pre>
         <code>
@@ -102,7 +110,9 @@
 <h2>Formatações de Textos</h2>
 <h3>Negrito</h3>
 <p>Se você pretende deixar em negrito alguma palavra, frase ou Parágrafo em HTML, você pode usar as tags &lt;strong&gt;&lt;/strong&gt; e colocar o conteúdo entre uma tag e outra, como exemplifiquei abaixo.</p>
-<p>Mariana estuda <strong>engenharia de software</strong> na <strong>UFC</strong></p>
+<small>
+    <p>Mariana estuda <strong>engenharia de software</strong> na <strong>UFC</strong></p>
+</small>
 <p><small>Código:</small></p>
 <pre>
     <code>
@@ -113,7 +123,9 @@
 </pre>
 <h3>Itálico</h3>
 <p>Se você quiser deixar uma palavra, frase ou parágrafo em itálico você deve usar as tags &lt;em&gt;&lt;/em&gt; e colocar o conteúdo entre essas duas tags, veja o exemplo abaixo:
+<small>
     <p>Aprender java não é <em>impossível</em>, só não é <em>possível</em> &#X1F440</p>
+</small>
 </p>
 <p><small>Código:</small></p>
 <pre>
@@ -124,5 +136,116 @@
     </code>
 </pre>
 <h3>Marca Texto</h3>
+<p>Para fazer essas marcações de texto em HTML5 você pode usar as tags &lt;mark&gt;...&lt;/mark&gt; colocando o conteúdo dentro de cada uma delas.</p>
+<small>
+    <p>O professor <mark>gustavo guanabara</mark> fez mais pela <mark>tecnologia</mark> <br> nesse país do que qualquer outra instituição de ensino.</p>
+</small>
+<p><small>Código:</small></p>
+<pre>
+    <code>
+&lt;p&gt;
+    O professor &lt;mark&gt;gustavo guanabara&lt;/mark&gt; fez mais pela &lt;mark&gt;tecnologia&lt;/mark&gt;                    <br>    nesse país do que qualquer outrinstituição de ensino.
+&lt;/p&gt;
+    </code>
+</pre>
+<h3>Citações</h3>
+<p>Para criar uma citação em HTML usamos as tags &lt;q&gt; e &lt;/q&gt; ou &lt;blockquote&gt; e &lt;/blockquote&gt; dentro de um parágrafo, logo a citação ja receberá as aspas como no exemplo abaixo.</p>
+<small>
+    <p>Segundo o filósofo Aristóteles <q>A dúvida é o princípio da sabedoria.</q></p>
+</small>
+<p><small>Código:</small></p>
+<pre>
+    <code>
+ &lt;p&gt;
+     Segundo o filósofo Aristóteles &lt;q&gt;A dúvida é o princípio da sabedoria.&lt;/q&gt;
+ &lt;/p&gt;
+    </code>
+</pre>
+<h3>Abreviações</h3>
+<p>Sempre que você quiser escrever uma sigla, mas deixar claro para o usuário e aos mecanismos de busca, você pode usar as tags &lt;abbr&gt; e &lt;/abbr&gt; confira o exemplo abaixo.</p>
+<small>
+    <p>Segundo o <abbr title="Instituto Brasileiro de Geografia e Estatísca">IBGE</abbr> a população brasileira é de 225 Milhões de pessoas.</p>
+</small>
+<p><small>Código:</small></p>
+<pre>
+    <code>
+&lt;p&gt;
+    Segundo o &lt;abbr title="Instituto Brasileiro de Geografia e Estatísca"&gt;IBGE&lt;/abbr&gt;
+    a população brasileira é de 225 Milhões de pessoas.
+&lt;/p&gt;
+    </code>
+</pre>
+
+
+<h2>Listas </h2>
+<p>Existem diversos tipos de listas em HTML sendo <strong>listas ordenadas</strong>, <strong>não ordenadas</strong> e <strong>mistas</strong>.
+   Eu desenvolvi uma página com vários exemplos de listas ordenadas e não ordenadas confira: <small><a href="https://jeovadev.github.io/ListasHTML/">https://jeovadev.github.io/ListasHTML/</a></small></p>
+   <h3>Listas mistas</h3>
+   <p>Podemos também criar listas dentro de outras listas denominadas listas mistas, veja o exemplo a seguir:</p>
+   <small>
+       <ol>
+        <li>Camarão</li>
+        <ul type="disc">
+            <li>Muqueca de camarão</li>
+            <li>camarão empanado</li>
+        </ul>
+        <li>Frango</li>
+        <ul type="disc">
+            <li>Frango empanado</li>
+            <li>Frango a parmegiana</li>
+        </ul>
+       </ol>
+   </small>
+<p><small>Código:</small></p>
+<pre>
+    <code>
+&lt;ol&gt;
+    &lt;li&gt;Camarão&lt;/li&gt;
+    &lt;ul type="disc"&gt;
+        &lt;li&gt;Muqueca de camarão&lt;/li&gt;
+        &lt;li&gt;camarão empanado&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;li&gt;Frango&lt;/li&gt;
+    &lt;ul type="disc"&gt;
+        &lt;li&gt;Frango empanado&lt;/li&gt;
+        &lt;li&gt;Frango a parmegiana&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/ol&gt;  
+    </code>
+</pre>
+
+
+<h2>Ligacões em toda parte</h2>
+<h3>Âncoras</h3>
+<p>Para criar um <em>hyperlink</em>, devemos criar <strong>Âncoras</strong> através da tag &lt;a&gt;.
+   O principal atributo dessa tag é o <em>href</em>, que cria uma refêrencia hipertexto. veja esse exemplo simples:</p>
+<pre>
+    <code>
+  &lt;h1&gt;Siga meu perfil no github&lt;/h1&gt;
+  &lt;a href="https://github.com/jeovadev"&gt;https://github.com/jeovadev&lt;/a&gt;
+    </code>
+</pre>
+<h3>Links internos</h3>
+<p>Para criar um link interno você deve usar a tag <small>&lt;a&gt;</small> e no atributo <small><em>href</em></small> você deve colocar o nome do arquivo que você quer abrir quando essa ação for execultada. em seguida, use o atributo <small>target"_self"</small> para sinalizar para o navegador que isso se trata de um link interno. Confira o exemplo abaixo:</p>
+<a href="expage.html" target="_self">expage.html</a>
+<p><small>Código:</small></p>
+<pre>
+    <code>
+    &lt;a href="expage.html" target="_self"&gt;expage.html&lt;/a&gt;
+    </code>
+</pre>
+<h3>Links externos</h3>
+<p>Para criar links externos você deve usar a tag <small>&lt;a&gt;</small> e colocar a URL do site que você quer disponibillizar dentro do atributo <small><em>href</em></small>. É recomendado que assim como nos links internos você use o atributo <small>taget"..."</small> e dentro das aspas você coloque <small>_blank</small> para sinalizar ao navegador que se trata de um link de terceiros e que seja aberto em outra aba. Confira o exemplo abaixo:</p>
+<a href="https://github.com" target="_blank">https://github.com</a>
+<p><small>Código:</small></p>
+<pre>
+    <code>
+    &lt;a href="https://github.com" target="_blank"&gt;https://github.com&lt;/a&gt;
+    </code>
+</pre>
+<h3>Downloads</h3>
+<p>Para disponibillizar um arquivo para download dentro do seu site você deve usar a tag <small>&lt;a&gt;</small> e colocar o nome do arquivo no atributo <small><em>href</em></small> e complementar com mais dois atributos <small>download".."</small> e o <small>type".."</small>. confira o exemplo abaixo:</p>
+<img src="imagens/cat.png" alt="cat" width="300px" height="300px">
+<a href="imagens/cat.png" download="cat.png" type="image/png">DOWNLOAD</a>
 </body>
 </html>
